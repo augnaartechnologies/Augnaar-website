@@ -76,5 +76,3 @@ clickToScroll.addEventListener("click", () => {
 });
 
 // --------------tilt-----------------
-
-const tilt = $(".js-tilt").tilt();

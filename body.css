@@ -112,12 +112,12 @@ a {
 .circle::after {
   content: "";
   position: absolute;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
+  top: calc(50% - 45px);
+  left: calc(50% - 45px);
   border-radius: 50%;
 
-  height: 60px;
-  width: 60px;
+  height: 90px;
+  width: 90px;
   background-color: rgb(255, 251, 0);
 }
 .circle::before {
@@ -133,11 +133,25 @@ a {
   animation: spin_01 03s linear infinite;
 }
 .one {
-  transform: scale(2);
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
 }
 .one::before {
-  animation: spin_01 05s linear infinite;
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background-color: rgb(35, 219, 127);
+  border-radius: 50%;
+  top: calc(50% - 35px);
+  left: -35px;
+  transform-origin: 235px;
+  animation: spin_01 6s linear infinite;
 }
+
 @keyframes spin_01 {
   0% {
     transform: rotate(0deg);
