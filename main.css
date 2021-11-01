@@ -1714,19 +1714,19 @@ h1 {
 /* --------------------------------------------------------------------------- images */
 
 #sun {
-  background-image: url(/assets/sun.png);
+  background-image: url(./assets/sun.png);
 }
 
 #mercury .planet {
-  background-image: url(/assets/mercury.png);
+  background-image: url(./assets/mercury.png);
 }
 
 #venus .planet {
-  background-image: url(/assets/venus.png);
+  background-image: url(./assets/venus.png);
 }
 
 #earth .planet {
-  background-image: url(/assets/earth.png);
+  background-image: url(./assets/earth.png);
 }
 
 #earth .moon {
@@ -1734,23 +1734,23 @@ h1 {
 }
 
 #mars .planet {
-  background-image: url(/assets/mars.png);
+  background-image: url(./assets/mars.png);
 }
 
 #jupiter .planet {
-  background-image: url(/assets/jupiter.png);
+  background-image: url(./assets/jupiter.png);
 }
 
 #saturn .planet {
-  background-image: url(/assets/saturn.png);
+  background-image: url(./assets/saturn.png);
 }
 
 #uranus .planet {
-  background-image: url(/assets/uranus.png);
+  background-image: url(./assets/uranus.png);
 }
 
 #neptune .planet {
-  background-image: url(/assets/neptune.png);
+  background-image: url(./assets/neptune.png);
 }
 
 /* --------------------------------------------------------------------------- responsive styles */

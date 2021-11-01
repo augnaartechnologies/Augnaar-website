@@ -54,6 +54,12 @@
 //   init();
 // });
 
+window.addEventListener("load", () => {
+  homeLink.click();
+  document.querySelector(".preloader").classList.toggle("hide");
+  console.log("loaded");
+});
+
 var homeLink = document.querySelector("#homelink");
 var aboutLink = document.querySelector("#aboutlink");
 var clickToScroll = document.querySelector(".scroll_down");
@@ -74,5 +80,3 @@ aboutLink.addEventListener("click", (e) => {
 clickToScroll.addEventListener("click", () => {
   window.scroll({ top: windowHeight * 2, left: 0, behavior: "smooth" });
 });
-
-// --------------tilt-----------------
