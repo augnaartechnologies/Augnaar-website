@@ -338,7 +338,7 @@ a {
 /* -----------------responsiveness----------- */
 @media (max-width: 1600px) {
   .contact_us {
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
   .home {
     transform: scale(0.9);
