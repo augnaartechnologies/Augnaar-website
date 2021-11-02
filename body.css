@@ -100,7 +100,9 @@ a {
   top: 0;
   left: 0;
   min-width: 100vw;
-  background-color: #00000070;
+  background-color: transparent;
+  backdrop-filter: blur(1000px);
+  z-index: 999;
 }
 .navbar ul {
   display: flex;
@@ -248,5 +250,115 @@ a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+/* ------------------contact us------------- */
+.contact_us {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.contact_us .container {
+  display: flex;
+  flex-direction: column;
+  background-color: #223548;
+  width: 680px;
+  height: 750px;
+  margin-top: 20px;
+}
+.contact_us .heading {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 500;
+  justify-self: flex-start;
+  padding: 0 40px;
+  background-color: #2b4d70;
+  margin-bottom: 20px;
+}
+.form_child {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.contact_us form {
+  display: flex;
+  height: calc(100% - 150px);
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 40px;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 20px;
+}
+.contact_us textarea {
+  resize: none;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid rgb(124, 215, 235);
+  color: rgb(124, 156, 235);
+  font-size: 18px;
+  outline: none;
+}
+.contact_us form input {
+  padding: 1rem 1.25rem;
+  background-color: transparent;
+  border: 2px solid rgb(124, 215, 235);
+  color: rgb(124, 156, 235);
+  font-size: 18px;
+  outline: none;
+}
+.name::before {
+  content: "Write name";
+}
+.subject::before {
+  content: "Write subject";
+}
+.email::before {
+  content: "Write email";
+}
+.message::before {
+  content: "Write message";
+}
+
+.form_child::before {
+  position: absolute;
+  font-size: 14px;
+  top: 0;
+  left: 0;
+  color: rgb(124, 215, 235);
+  margin: 0 1rem;
+  padding: 2px;
+  border: 2px solid rgb(124, 215, 235);
+  transform: translateY(-50%);
+  background-color: #223548;
+}
+/* -----------------responsiveness----------- */
+@media (max-width: 1600px) {
+  .contact_us {
+    transform: scale(0.7);
+  }
+  .home {
+    transform: scale(0.9);
+  }
+  .about_us {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact_us {
+    transform: scale(1);
+  }
+  .home {
+    transform: scale(1);
+  }
+  .about_us {
+    transform: scale(1);
+  }
+  .illustration_container {
+    display: none;
   }
 }

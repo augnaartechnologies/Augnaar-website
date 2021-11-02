@@ -62,6 +62,7 @@ window.addEventListener("load", () => {
 
 var homeLink = document.querySelector("#homelink");
 var aboutLink = document.querySelector("#aboutlink");
+var contactLink = document.querySelector("#contactlink");
 var clickToScroll = document.querySelector(".scroll_down");
 
 const windowHeight = window.innerHeight;
@@ -74,9 +75,14 @@ aboutLink.addEventListener("click", (e) => {
   e.preventDefault();
   console.log(windowHeight);
 
-  window.scroll({ top: windowHeight * 2, left: 0, behavior: "smooth" });
+  window.scroll({ top: windowHeight * 1, left: 0, behavior: "smooth" });
 });
 
 clickToScroll.addEventListener("click", () => {
+  window.scroll({ top: windowHeight * 1, left: 0, behavior: "smooth" });
+  e.preventDefault();
+});
+contactLink.addEventListener("click", (e) => {
+  e.preventDefault();
   window.scroll({ top: windowHeight * 2, left: 0, behavior: "smooth" });
 });
